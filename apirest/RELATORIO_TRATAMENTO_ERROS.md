@@ -2,7 +2,6 @@
 
 **Aplicativo:** Consumo de APIs REST (ViaCEP + PokeAPI)
 **Disciplina:** Desenvolvimento Mobile — Aula 15
-**Autor:** Eduardo Jhonathan Passos Neumann
 
 ---
 

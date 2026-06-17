@@ -17,10 +17,8 @@ class Pokemon {
     required this.tipos,
   });
 
-  /// Altura em metros (a API retorna em decímetros)
+  
   double get alturaMetros => alturaDecimetros / 10;
-
-  /// Peso em kg (a API retorna em hectogramas)
   double get pesoQuilos => pesoHectogramas / 10;
 
   factory Pokemon.fromJson(Map<String, dynamic> json) {
