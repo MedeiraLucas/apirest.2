@@ -67,7 +67,7 @@ class _PokemonScreenState extends State<PokemonScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // ── Campo de busca ────────────────────────────────────────────
+            // busca do campo de texto e botão
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -105,7 +105,7 @@ class _PokemonScreenState extends State<PokemonScreen> {
             ),
             const SizedBox(height: 24),
 
-            // ── Indicador de carregamento ────────────────────────────────
+            // Indica o carregamento com um spinner
             if (_carregando)
               const Center(
                 child: Padding(
@@ -138,7 +138,7 @@ class _PokemonScreenState extends State<PokemonScreen> {
                 ),
               ),
 
-            // ── Resultado ─────────────────────────────────────────────────
+            // ── Resultado do Pokémon
             if (_pokemon != null && !_carregando) _ResultadoPokemon(pokemon: _pokemon!),
           ],
         ),
@@ -147,7 +147,7 @@ class _PokemonScreenState extends State<PokemonScreen> {
   }
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
+//
 
 class _ResultadoPokemon extends StatelessWidget {
   final Pokemon pokemon;
